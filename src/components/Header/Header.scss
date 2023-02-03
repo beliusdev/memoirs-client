@@ -1,0 +1,23 @@
+.header {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 0;
+  }
+
+  &__search {
+    padding: 1rem 2rem;
+    font: inherit;
+    outline: none;
+    flex: 0 0 35%;
+    border-radius: 3px;
+    border: solid 1px var(--color-primary);
+    transition: all .4s;
+  }
+
+  &__search:focus {
+    flex: 0 0 40%;
+    border-color: var(--color-secondary);
+  }
+}

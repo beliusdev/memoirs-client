@@ -1,0 +1,59 @@
+.message {
+  bottom: 3rem;
+  right: 6.6%;
+  width: 30rem;
+  animation: messageAnimation 6.1s alternate;
+  position: fixed;
+
+  &__item {
+    background-color: var(--color-error);
+    border-radius: 3px;
+    color: #fff;
+    padding: 1rem 2rem;
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  @media screen and (max-width: $bp-largest) {
+    right: 4.1%;
+  }
+}
+
+@keyframes messageAnimation {
+  0% {
+    transform: translateX(20rem);
+    opacity: 0;
+  }
+
+  30% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  40% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  60% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  70% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  80% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(20rem);
+    opacity: 0;
+  }
+}

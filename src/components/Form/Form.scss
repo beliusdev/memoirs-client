@@ -1,0 +1,47 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  width: 50rem;
+  margin: 0 auto;
+
+  // form group
+  & > div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  input, button, textarea {
+    padding: 1rem 2rem;
+    font: inherit;
+    outline: none;
+    resize: none;
+    border-radius: 3px;
+    border: 1px solid var(--color-primary);
+    transition: all .4s;
+
+    &:focus {
+      border-color: var(--color-secondary);
+    }
+  }
+
+  button {
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  button:hover {
+    border-color: var(--color-secondary);
+    background-color: var(--color-secondary);
+    color: #fff;
+  }
+
+  textarea {
+    height: 25rem;
+  }
+
+  @media screen and (max-width: $bp-medium) {
+    width: 100%;
+  }
+}

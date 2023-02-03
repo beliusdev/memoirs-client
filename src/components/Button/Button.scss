@@ -1,0 +1,28 @@
+.button {
+  background-color: transparent;
+  padding: 1rem 2rem;
+  font: inherit;
+  border: 1px solid var(--color-tertiary);
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.4s;
+
+  &--warning {
+    border-color: var(--color-error);
+    color: var(--color-error);
+  }
+
+  &--warning:hover {
+    background-color: var(--color-error);
+    color: #fff;
+  }
+
+  &--primary {
+    color: var(--color-tertiary);
+  }
+
+  &--primary:hover {
+    background-color: var(--color-tertiary);
+    color: #fff;
+  }
+}

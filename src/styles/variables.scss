@@ -1,0 +1,9 @@
+$bp-largest: 1200px;
+$bp-larger: 1050px;
+$bp-medium: 585px;
+// $bp-small: 650px;
+// $bp-smaller: 450px;
+
+:export {
+  bpLargest: $bp-largest;
+}

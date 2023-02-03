@@ -1,0 +1,16 @@
+.home {
+}
+
+.memories {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  @media screen and (max-width: $bp-larger) {
+    .container {
+      grid-template-columns: 1fr;
+    }
+  }
+}

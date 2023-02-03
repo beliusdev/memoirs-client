@@ -1,0 +1,13 @@
+.container {
+ width: 85%;
+ margin: 0 auto;
+ padding: 10rem 0;
+
+ @media screen and (max-width: $bp-largest) {
+  width: 90%;
+ }
+
+ @media screen and (max-width: $bp-larger) {
+  width: 95%;
+ }
+}
