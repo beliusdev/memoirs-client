@@ -39,6 +39,7 @@
 
   textarea {
     height: 25rem;
+    white-space: pre-wrap;
   }
 
   @media screen and (max-width: $bp-medium) {
