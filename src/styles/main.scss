@@ -8,10 +8,12 @@
 @import '../components/Navigation/Navigation.scss';
 @import '../components/Button/Button.scss';
 @import '../components/Message/Message.scss';
+@import '../components/Logo/Logo.scss';
 
 @import '../pages/Home/Home.scss';
 @import '../pages/Login/Login.scss';
 @import '../pages/Register/Register.scss';
+@import '../pages/UserPage/UserPage.scss';
 
 :root {
   --color-primary: #6d4c41;

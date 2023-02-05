@@ -1,5 +1,5 @@
 import axios from 'axios';
-export const BASE_URL = 'https://memoirs-0o4b.onrender.com';
+export const BASE_URL = 'http://localhost:5000';
 
 export default function http(withToken) {
   const token = localStorage.getItem('mm-token');

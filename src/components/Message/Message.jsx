@@ -9,8 +9,6 @@ function Message() {
   const dispatch = useDispatch();
   const message = useSelector((state) => state.message);
 
-  console.log(message);
-
   useEffect(() => {
     if (!message) return;
     const timerId = setTimeout(() => {

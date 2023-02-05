@@ -12,14 +12,16 @@
     gap: 4px;
   }
 
-  input, button, textarea {
+  input,
+  button,
+  textarea {
     padding: 1rem 2rem;
     font: inherit;
     outline: none;
     resize: none;
     border-radius: 3px;
     border: 1px solid var(--color-primary);
-    transition: all .4s;
+    transition: all 0.4s;
 
     &:focus {
       border-color: var(--color-secondary);
@@ -39,7 +41,6 @@
 
   textarea {
     height: 25rem;
-    white-space: pre-wrap;
   }
 
   @media screen and (max-width: $bp-medium) {

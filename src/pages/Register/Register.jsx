@@ -23,7 +23,6 @@ function Register() {
     try {
       e.preventDefault();
       const response = await UserApi.register(userInfo);
-      console.log(response);
       localStorage.setItem('mm-token', response.data.token);
       dispatch(setUser(response.data.user));
       navigate('/');

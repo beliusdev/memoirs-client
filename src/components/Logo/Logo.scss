@@ -1,0 +1,12 @@
+.logo {
+  font-size: 1.1rem;
+  cursor: pointer;
+
+  a {
+    color: var(--color-primary);
+  }
+
+  a:hover {
+    color: var(--color-tertiary);
+  }
+}

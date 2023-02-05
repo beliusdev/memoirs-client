@@ -6,6 +6,7 @@ import { setMemories, setMessage, setSearchTerm } from '../../state';
 import getErrorMessage from '../../utils/getErrorMessage';
 
 import Container from '../Container/Container';
+import Logo from '../Logo/Logo';
 import Navigation from '../Navigation/Navigation';
 
 function Header() {
@@ -32,7 +33,7 @@ function Header() {
   return (
     <div className='header'>
       <Container>
-        <h3>Logo</h3>
+        <Logo />
         {user.username && (
           <input
             value={'' || searchTerm}
