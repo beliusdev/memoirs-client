@@ -16,7 +16,7 @@ function Header() {
 
   useEffect(() => {
     if (!localStorage.getItem('mm-token')) return;
-    const timerId = setTimeout(() => {
+    if (searchTerm) {
       (async () => {
         try {
           const response = await MemoryApi.searchMemories(searchTerm);
@@ -25,9 +25,16 @@ function Header() {
           dispatch(setMessage(getErrorMessage(error)));
         }
       })();
-    }, 1500);
-
-    return () => clearTimeout(timerId);
+    } else {
+      (async () => {
+        try {
+          const response = await MemoryApi.getUserMemories();
+          dispatch(setMemories(response.data.memories));
+        } catch (error) {
+          dispatch(setMessage(getErrorMessage(error)));
+        }
+      })();
+    }
   }, [searchTerm, dispatch]);
 
   return (

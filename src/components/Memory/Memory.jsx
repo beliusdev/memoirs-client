@@ -58,8 +58,6 @@ function Memory({ memory }) {
           <h3 className='memory__title'>{title}</h3>
           <p className='memory__body'>{body}</p>
 
-          {/* todo: images */}
-
           <p className='memory__tags'>{tags.join(', ')}</p>
           <h6 className='memory__date'>
             {moment(createdAt).locale('en-ca').format('LL')}

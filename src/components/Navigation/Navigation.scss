@@ -74,6 +74,11 @@
     }
   }
 
+  .active {
+    border-color: var(--color-secondary);
+    color: var(--color-secondary);
+  }
+
   @media screen and (max-width: $bp-largest) {
     gap: 1rem;
     flex-direction: column;
@@ -99,8 +104,10 @@
     }
   }
 
-  .active {
-    border-color: var(--color-secondary);
-    color: var(--color-secondary);
+  @media screen and (max-width: $bp-small) {
+    &__icon {
+      width: 3.8rem;
+      height: 3.8rem;
+    }
   }
 }

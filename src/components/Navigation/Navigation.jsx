@@ -4,7 +4,7 @@ import { NavLink, useNavigate } from 'react-router-dom';
 
 import variables from '../../styles/variables.scss';
 
-import { setUser, setMemories } from '../../state';
+import { setUser, setMemories, setSearchTerm } from '../../state';
 
 /* eslint-disable jsx-a11y/anchor-is-valid */
 function Navigation() {
@@ -42,13 +42,14 @@ function Navigation() {
       onClick={() => {
         handleLogout();
         setIsMenuOpened(false);
+        dispatch(setSearchTerm(''));
       }}
     >
       Log Out
     </a>
   );
 
-  const items = Object.entries(navigationItems).map(([key, value]) => (
+  let items = Object.entries(navigationItems).map(([key, value]) => (
     <NavLink
       key={key}
       activeclassname='active'
@@ -72,7 +73,7 @@ function Navigation() {
           >
             <div></div>
           </div>
-          {isMenuOpened && items}
+          {isMenuOpened && <>{items}{user.username && logout}</>}
         </>
       ) : (
         <>

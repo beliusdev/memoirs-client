@@ -9,4 +9,8 @@
   a:hover {
     color: var(--color-tertiary);
   }
+
+  @media screen and (max-width: $bp-small) {
+    font-size: 0.9rem;
+  }
 }

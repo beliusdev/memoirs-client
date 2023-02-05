@@ -13,11 +13,19 @@
     flex: 0 0 35%;
     border-radius: 3px;
     border: solid 1px var(--color-primary);
-    transition: all .4s;
+    transition: all 0.4s;
   }
 
   &__search:focus {
     flex: 0 0 40%;
     border-color: var(--color-secondary);
+  }
+
+  @media screen and (max-width: $bp-small) {
+    font-size: 1.3rem;
+
+    &__search {
+      padding: 1rem 1.5rem;
+    }
   }
 }
